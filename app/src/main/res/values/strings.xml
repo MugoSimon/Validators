@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Intern</string>
+    <string name="label">label</string>
+    <string name="content_description_end_icon">Input text</string>
+    <string name="helper_text">first name or surname</string>
+    <string name="login">login</string>
+    <string name="enter_password">enter password</string>
+    <string name="enter_name">enter name</string>
+    <string name="username">username</string>
+    <string name="characters">minimum of 8 characters</string>
+    <string name="password">password</string>
+    <string name="submit">submit</string>
+</resources>

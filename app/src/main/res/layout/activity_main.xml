@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/username"
+        app:hintTextColor="@color/info_description_color"
+        app:counterMaxLength="15"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorPrimaryDark_intern"
+        app:errorEnabled="true"
+        app:helperText="@string/helper_text"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/info_description_color"
+        app:shapeAppearance="@style/Cut"
+        app:startIconContentDescription="@string/content_description_end_icon"
+        app:startIconDrawable="@drawable/ic_person_24"
+        app:startIconTint="@color/colorPrimary_app">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textField_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/password"
+        app:hintTextColor="@color/info_description_color"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorPrimary_app"
+        app:errorEnabled="true"
+        app:helperText="@string/characters"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/info_description_color"
+        app:shapeAppearance="@style/Rounded"
+        app:startIconContentDescription="@string/content_description_end_icon"
+        app:startIconDrawable="@drawable/ic_lock_24"
+        app:startIconTint="@color/colorPrimary_app">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@xml/btn_gradient_style"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:text="@string/submit" />
+
+</RelativeLayout>
